@@ -3,7 +3,7 @@ import { Routes,Route, Link } from "react-router-dom";
 import Home from "./components/home.js";
 import Journeys from "./components/journeys.js";
 import Stations from "./components/stations.js";
-import Upload from "./components/upload.js";
+import Import from "./components/import.js";
 
 
 import './App.css';
@@ -23,7 +23,7 @@ function App() {
               <Link to={"/stations"}>Stations</Link>
             </li>
             <li>
-              <Link to={"/upload"}>Upload</Link>
+              <Link to={"/import"}>Import</Link>
             </li>
           </ul>
         </nav>
@@ -31,7 +31,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/journeys" element={<Journeys />} />
           <Route exact path="/stations" element={<Stations />} />
-          <Route exact path="/upload" element={<Upload />} />
+          <Route exact path="/import" element={<Import />} />
         </Routes>
       </div>    
   );

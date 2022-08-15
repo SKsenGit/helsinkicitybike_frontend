@@ -12,9 +12,9 @@ const getById = (id) => {
     return request.then(response => { return response.data })
  
 }
-const create = (newObject) => {
+const createStation = (newObject) => {
     const request = axios.post(baseUrl, newObject)
     return request.then(response => { return response.data })
 }
 
-module.exports =  { getAll, create, getById }
+export { getAll, createStation, getById }
